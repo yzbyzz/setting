@@ -30,7 +30,12 @@ set cindent
 "http://github.com/scrooloose/nerdtree.git 
 autocmd vimenter * NERDTree
 
+“supertab
+”https：//github.com/ervandew/supertab.git  
+
+"ctags  【sudo apt-get install ctags】
+nmap <F5> :! ctags * -R<CR>
+
 "Tagbar
 "https://github.com/majutsushi/tagbar.git 
-"需安装ctags  【sudo apt-get install ctags】
 nmap <F8> :TagbarToggle<CR>
