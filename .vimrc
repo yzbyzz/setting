@@ -10,6 +10,12 @@ set relativenumber    "相对行号
 set linespace=4
 set hlsearch          "搜索高亮
 set incsearch         "动态高亮
+set showcmd
+
+set fileencoding=utf-8
+"set fileencoding=utf-8,gb2312,gbk,gb18030
+set termencoding=utf-8
+set encoding=utf-8
 
 "设置Windows风格的C/C++自动缩进
 "1）设置（软）制表符宽度为4：
@@ -28,14 +34,21 @@ set cindent
 
 "NERDTree
 "http://github.com/scrooloose/nerdtree.git 
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
+nmap <F1> :NERDTreeToggle<CR>
+
 
 “supertab
-”https：//github.com/ervandew/supertab.git  
+”https://github.com/ervandew/supertab.git  
 
-"ctags  【sudo apt-get install ctags】
-nmap <F5> :! ctags * -R<CR>
+"ctags  
+"【sudo apt-get install ctags】
+"【yum install ctags】
+nmap <F5> :! ctags -R *<CR>
+"nmap <F5> :! ctags -R YOUR_SRC_PATY/*<CR>
+set tags=tags;
+set autochdir
 
 "Tagbar
 "https://github.com/majutsushi/tagbar.git 
-nmap <F8> :TagbarToggle<CR>
+nmap <F6> :TagbarToggle<CR>
