@@ -38,8 +38,8 @@ set cindent
 nmap <F1> :NERDTreeToggle<CR>
 
 
-“supertab
-”https://github.com/ervandew/supertab.git  
+"supertab
+"https://github.com/ervandew/supertab.git  
 
 "ctags  
 "【sudo apt-get install ctags】
