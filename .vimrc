@@ -1,4 +1,5 @@
 "pathogen  插件管理
+"pathogen是为了解决每一个插件安装后文件分散到多个目录不好管理而存在的。
 "https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
@@ -52,3 +53,29 @@ set autochdir
 "Tagbar
 "https://github.com/majutsushi/tagbar.git 
 nmap <F6> :TagbarToggle<CR>
+
+
+"Vundle
+"git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+"vundle是为了解决自动搜索及下载插件而存在的。 
+"
+"在'call vundle#rc()'和'filetype plugin indent on'之间加入github地址，然后执行':source ~/.vimrx','BundleInstall'
+""""""""""""""""""""" Vundle
+set nocompatible
+filetype off
+
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+
+Bundle 'gmarik/vundle'
+
+
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/ListToggle'
+Bundle 'scrooloose/syntastic'
+
+
+filetype plugin indent on
+""""""""""""""""""""" Vundle
