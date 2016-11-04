@@ -1,8 +1,12 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""
 "pathogen  插件管理
-""https://github.com/tpope/vim-pathogen
+"pathogen是为了解决每一个插件安装后文件分散到多个目录不好管理而存在的。
+"https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
+"""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""" base
 syntax on             "语法高亮
 filetype plugin indent on
 set number            "显示行号
@@ -13,6 +17,7 @@ set incsearch         "动态高亮
 set showcmd
 
 set fileencoding=utf-8
+"set fileencoding=utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
 set encoding=utf-8
 
@@ -28,9 +33,10 @@ set autoindent
 "4）设置使用 C/C++ 语言的自动缩进方式：
 set cindent
 
+""""""""""""""""""""""""""""""""""""""""""""""""" base
 
-""""""""""""""""""""""""""
-"插件
+
+""""""""""""""""""""""""""""""""""""""""""""""""" 插件
 "
 ""NERDTree
 "http://github.com/scrooloose/nerdtree.git
@@ -49,7 +55,10 @@ set autochdir
 "Tagbar
 nmap <F6> : TagbarToggle<CR>
 
-"Vundle
+""""""""""""""""""""""""""""""""""""""""""""""""" 插件
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""" Vundle
 "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 "vundle是为了解决自动搜索及下载插件而存在的。 
 "
@@ -72,10 +81,10 @@ Bundle 'scrooloose/syntastic'
 
 
 filetype plugin indent on
-""""""""""""""""""""" Vundle
+""""""""""""""""""""""""""""""""""""""""""""""""" Vundle
 
-"YouCompleteMe
 
+""""""""""""""""""""""""""""""""""""""""""""""""" YouCompleteMe
 " 自动补全配置
 set completeopt=longest,menu
 "让Vim的补全菜单行为与一般IDE一致(参考VimTip1228)
@@ -112,3 +121,5 @@ let g:ycm_complete_in_strings = 1
 let g:ycm_collect_identifiers_from_comments_and_strings = 0
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR> " 跳转到定义处
+
+""""""""""""""""""""""""""""""""""""""""""""""""" YouCompleteMe
