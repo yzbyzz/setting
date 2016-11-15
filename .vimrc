@@ -33,6 +33,10 @@ set autoindent
 "4）设置使用 C/C++ 语言的自动缩进方式：
 set cindent
 
+"http://www.cnblogs.com/ayanmw/p/3645183.html
+"避免粘贴时缩进爆炸
+set pastetoggle=<F9>
+
 """"""""""""""""""""""""""""""""""""""""""""""""" base
 
 
@@ -49,10 +53,7 @@ nmap <F1> : NERDTreeToggle<CR>
 nmap <F4> :! ctags -R ~/src/*<CR>
 set tags=tags;
 set autochdir
-
 nmap <F5> :! ctags -R ./*<CR>
-set tags=tags;
-set autochdir
 
 "Tagbar
 "https://github.com/majutsushi/tagbar.git 
@@ -66,7 +67,6 @@ nmap <F6> : TagbarToggle<CR>
 "vundle是为了解决自动搜索及下载插件而存在的。 
 "
 "在'call vundle#rc()'和'filetype plugin indent on'之间加入github地址，然后执行':source ~/.vimrx','BundleInstall'
-""""""""""""""""""""" Vundle
 set nocompatible
 filetype off
 
