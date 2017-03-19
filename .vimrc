@@ -21,6 +21,8 @@ set fileencoding=utf-8
 set termencoding=utf-8
 set encoding=utf-8
 
+#主题
+colorscheme desert
 
 "设置Windows风格的C/C++自动缩进
 "1）设置（软）制表符宽度为4：
