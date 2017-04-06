@@ -27,6 +27,7 @@ colorscheme desert
 "设置Windows风格的C/C++自动缩进
 "1）设置（软）制表符宽度为4：
 set tabstop=4
+set expandtab
 set softtabstop=4
 "2）设置缩进的空格数为4
 set shiftwidth=4
