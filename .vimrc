@@ -21,7 +21,7 @@ set fileencoding=utf-8
 set termencoding=utf-8
 set encoding=utf-8
 
-#主题
+"主题
 colorscheme desert
 
 "设置Windows风格的C/C++自动缩进
@@ -53,6 +53,7 @@ nmap <F1> : NERDTreeToggle<CR>
 "catgs
 "【sudo apt-get install ctags】
 "【yum install ctags】
+"【brew install ctags】
 nmap <F4> :! ctags -R ~/src/*<CR>
 set tags=tags;
 set autochdir
