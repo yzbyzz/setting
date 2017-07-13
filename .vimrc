@@ -10,7 +10,7 @@ execute pathogen#infect()
 syntax on             "语法高亮
 filetype plugin indent on
 set number            "显示行号
-set relativenumber    "相对行号
+set relativenumber    "相对行号     vim7.4+，否则当前行号会显示为0
 set linespace=4
 set hlsearch          "搜索高亮
 set incsearch         "动态高亮
@@ -39,6 +39,9 @@ set cindent
 "http://www.cnblogs.com/ayanmw/p/3645183.html
 "避免粘贴时缩进爆炸
 set pastetoggle=<F9>
+
+"重新打开文件时回到上次退出的位置
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""" base
 
