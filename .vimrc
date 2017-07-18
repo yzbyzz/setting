@@ -21,6 +21,12 @@ set fileencoding=utf-8
 set termencoding=utf-8
 set encoding=utf-8
 
+set backspace=2
+"0 same as “:set backspace=” (Vi compatible)
+"1 same as “:set backspace=indent,eol”
+"2 same as “:set backspace=indent,eol,start”
+"http://cenalulu.github.io/linux/why-my-backspace-not-work-in-vim/
+
 "主题
 colorscheme desert
 
