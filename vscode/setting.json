@@ -1,0 +1,78 @@
+{
+  // ================================ ================================
+
+  // ================================ window ================================
+  // 放大/缩小页面
+  "window.zoomLevel": 0,
+  "window.restoreWindows": "none",
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+
+  // 开启 vscode 文件路径导航
+  "breadcrumbs.enabled": true,
+
+  // 关闭自动更新插件
+  "extensions.autoUpdate": false,
+
+  // ================================ editor 相关 ================================
+
+  "editor.renderWhitespace": "all",
+  // 自动检测缩进
+  "editor.detectIndentation": true,
+  // 按 "Tab" 时插入空格。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。
+  "editor.insertSpaces": true,
+  // 100 列后换行
+  "editor.wordWrapColumn": 100,
+  // 保存时格式化
+  "editor.formatOnSave": true,
+
+  // ================================ tab 大小 ================================
+  // 默认为 4 个空格
+  "editor.tabSize": 4,
+  // 部分类型文件使用 2 个空格
+  // https://www.zhihu.com/question/49624784/answer/210380824
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+
+  // ================================ eslint & prettier & vetur ================================
+  // https://blog.csdn.net/SilenceJude/article/details/81589784
+  "eslint.autoFixOnSave": true, // 每次保存的时候将代码按eslint格式进行修复
+  "prettier.eslintIntegration": true, //让prettier使用eslint的代码格式进行校验
+  "prettier.semi": false, //去掉代码结尾的分号
+  "prettier.singleQuote": true, //使用带引号替代双引号
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
+  "vetur.format.defaultFormatter.html": "js-beautify-html", //格式化.vue中html
+  "vetur.format.defaultFormatter.js": "vscode-typescript", //让vue中的js按编辑器自带的ts格式进行格式化
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-aligned" //属性强制折行对齐
+    }
+  },
+  "eslint.validate": [
+    //开启对.vue文件中错误的检查
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+
+  "files.associations": {
+    "*.wpy": "vue"
+  }
+}
+
