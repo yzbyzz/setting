@@ -13,6 +13,24 @@
   // 关闭自动更新插件
   "extensions.autoUpdate": false,
 
+  // 搜索忽略
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "build/": true,
+    "temp/": true,
+    "library/": true,
+    "**/*.anim": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.meta": true,
+    "library/": true,
+    "local/": true,
+    "temp/": true
+  },
+
   // ================================ editor 相关 ================================
 
   "editor.renderWhitespace": "all",
@@ -37,10 +55,10 @@
     "editor.tabSize": 2
   },
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 4
   },
   "[typescript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 4
   },
 
   // ================================ eslint & prettier & vetur ================================
@@ -73,6 +91,6 @@
 
   "files.associations": {
     "*.wpy": "vue"
-  }
+  },
+  "editor.fontSize": 16
 }
-
