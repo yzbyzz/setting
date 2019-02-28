@@ -35,7 +35,7 @@
 
   "editor.renderWhitespace": "all",
   // 自动检测缩进
-  "editor.detectIndentation": true,
+  "editor.detectIndentation": false,
   // 按 "Tab" 时插入空格。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。
   "editor.insertSpaces": true,
   // 100 列后换行
@@ -43,16 +43,18 @@
   // 保存时格式化
   "editor.formatOnSave": true,
 
+  "editor.fontSize": 16,
+
   // ================================ tab 大小 ================================
   // 默认为 4 个空格
   "editor.tabSize": 4,
   // 部分类型文件使用 2 个空格
   // https://www.zhihu.com/question/49624784/answer/210380824
   "[html]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 4
   },
   "[css]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 4
   },
   "[javascript]": {
     "editor.tabSize": 4
@@ -66,7 +68,7 @@
   "eslint.autoFixOnSave": true, // 每次保存的时候将代码按eslint格式进行修复
   "prettier.eslintIntegration": true, //让prettier使用eslint的代码格式进行校验
   "prettier.semi": false, //去掉代码结尾的分号
-  "prettier.singleQuote": true, //使用带引号替代双引号
+  "prettier.singleQuote": true, //使用单引号替代双引号
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
   "vetur.format.defaultFormatter.html": "js-beautify-html", //格式化.vue中html
   "vetur.format.defaultFormatter.js": "vscode-typescript", //让vue中的js按编辑器自带的ts格式进行格式化
@@ -91,6 +93,5 @@
 
   "files.associations": {
     "*.wpy": "vue"
-  },
-  "editor.fontSize": 16
+  }
 }
