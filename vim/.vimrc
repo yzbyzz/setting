@@ -11,6 +11,9 @@ set relativenumber    "相对行号     vim7.4+，否则当前行号会显示为
 set linespace=4
 set hlsearch          "搜索高亮
 set incsearch         "动态高亮
+set ignorecase        "设置默认进行大小写不敏感查找
+set smartcase         " 如果有一个大写字母，则切换到大小写敏感查找
+
 set showcmd
 
 set fileencoding=utf-8
